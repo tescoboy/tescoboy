@@ -1,13 +1,17 @@
 document.write("hello")
 var div_1_sizes = [
                 [300, 250],
-                [300, 600]
-            ];
-            var div_2_sizes = [
+                [300, 600],
                 [728, 90],
                 [970, 250]
             ];
-            var PREBID_TIMEOUT = 1000;
+            var div_2_sizes = [
+                [300, 250],
+                [300, 600],
+                [728, 90],
+                [970, 250]
+            ];
+            var PREBID_TIMEOUT = 10000;
 
             var pbjs = pbjs || {};
             pbjs.que = pbjs.que || [];
