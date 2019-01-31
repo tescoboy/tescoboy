@@ -3,7 +3,8 @@ var div_1_sizes = [
                 [300, 250],
                 [300, 600],
                 [728, 90],
-                [970, 250]
+                [970, 250],
+                [930,180]
             ];
             var div_2_sizes = [
                 [300, 250],
@@ -24,12 +25,12 @@ var div_1_sizes = [
                             sizes: div_1_sizes
                         }
                     },
-                    bids: [{
-                        bidder: 'appnexus',
-                        params: {
-                            placementId: 11485454
-                        }
-                    }]
+                    bids: [ 
+            {bidder: 'rubicon', params: {accountId: "10478", siteId: "65884", zoneId: "309498"}},
+            {bidder: 'appnexus', params: {placementId: "11485448"}},
+            {bidder: 'openx', params: { unit: "539223805", delDomain: "jfmedier-d.openx.net"}},
+            {bidder: 'ix', params: { siteId: "210119", size: [300, 250] }},         
+            {bidder: 'xaxis', params: { placementId: "5760264"}}]
                 },
                 {
                     code: 'div-2',
@@ -38,12 +39,11 @@ var div_1_sizes = [
                             sizes: div_2_sizes
                         }
                     },
-                    bids: [{
-                        bidder: 'appnexus',
-                        params: {
-                            placementId: 13144370
-                        }
-                    }]
+                    bids: [{bidder: 'rubicon', params: {accountId: "10478", siteId: "65884", zoneId: "309510"}},
+            {bidder: 'appnexus', params: {placementId: "11485471"}},
+            {bidder: 'openx', params: { unit: "539223808", delDomain: "jfmedier-d.openx.net"}},
+            {bidder: 'ix', params: { siteId: "210117", size: [160, 600] }},
+            {bidder: 'xaxis', params: { placementId: "5760271"}}]
                 }
             ];
 
