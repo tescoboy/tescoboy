@@ -1,28 +1,33 @@
+
+<html>
 <head>
+    <script type="text/javascript" src="http://acdn.adnxs.com/prebid/not-for-prod/1/prebid.js" ></script>
+        <script type="text/javascript" src="http://acdn.adnxs.com/ast/ast.js" ></script>
+    <script type="text/javascript" src="appnexusScript.js"></script>
 </head>
 <body>
-<p>
-        <img alt="" src="https://media.giphy.com/media/2kVmPEilAEYlWfg7fO/giphy.gif" 
-             style="width:1080px;height:1080;" id="imgClickAndChange" onclick="changeImage()"  />
-</p>
-<script language="javascript">
-    function changeImage() {
+        <h1>Using AppNexus Publisher Ad Server</h1>
+        <h5>Div-1</h5>
+        <div id="div-1">
+            <script type="text/javascript">
+                apntag.anq.push(function() {
+                    apntag.showTag('div-1');
+                });
 
-        if (document.getElementById("imgClickAndChange").src == "https://media.giphy.com/media/2kVmPEilAEYlWfg7fO/giphy.gif") 
-        {
-            document.getElementById("imgClickAndChange").src = "https://cdn.opendemocracy.net/files/imagecache/wysiwyg_imageupload_lightbox_preset/wysiwyg_imageupload/558532/blackbox_key-visual.jpg";
-            setTimeout(timer, 259200000);
-        }
-        else 
-        {
-            if(typeof console === 'undefined')
-{
-    //do nothing
-}
-        }
+            </script>
+        </div>
 
-        function timer() {{
-    document.getElementById("imgClickAndChange").src = "https://cdn.opendemocracy.net/files/imagecache/wysiwyg_imageupload_lightbox_preset/wysiwyg_imageupload/558532/blackbox_key-visual.jpg";
-}}
-    }
-</script>
+        <br>
+<div id="container">
+        <h5>Div-2</h5>
+        <div id="div-2">
+            <script type="text/javascript">
+                apntag.anq.push(function() {
+                    apntag.showTag('div-2');
+                });
+
+            </script>
+        </div>
+    </body>
+
+</html>
