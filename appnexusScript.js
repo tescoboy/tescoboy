@@ -23,7 +23,7 @@ var div_1_sizes = [
                     bids: [{
                         bidder: 'appnexus',
                         params: {
-                            placementId: 13144370
+                            placementId: 11485454
                         }
                     }]
                 },
