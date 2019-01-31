@@ -1,4 +1,4 @@
-document.write("hello")
+document.write("hello 1")
 var div_1_sizes = [
                 [300, 250],
                 [300, 600],
@@ -40,7 +40,7 @@ var div_1_sizes = [
                         }
                     },
                     bids: [{bidder: 'rubicon', params: {accountId: "10478", siteId: "65884", zoneId: "309510"}},
-            {bidder: 'appnexus', params: {placementId: "11485471"}},
+            {bidder: 'appnexus', params: {placementId: "12886199"}},
             {bidder: 'openx', params: { unit: "539223808", delDomain: "jfmedier-d.openx.net"}},
             {bidder: 'ix', params: { siteId: "210117", size: [160, 600] }},
             {bidder: 'xaxis', params: { placementId: "5760271"}}]
