@@ -1,4 +1,4 @@
-document.write("hello 1")
+document.write("hello 2")
 var div_1_sizes = [
                 [300, 250],
                 [300, 600],
