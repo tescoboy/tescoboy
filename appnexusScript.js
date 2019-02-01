@@ -27,7 +27,7 @@ var div_1_sizes = [
                     },
                     bids: [ 
             {bidder: 'rubicon', params: {accountId: "10478", siteId: "65884", zoneId: "309498"}},
-            {bidder: 'appnexus', params: {placementId: "12536288"}},
+            {bidder: 'appnexus', params: {placementId: "13144370"}},
             {bidder: 'openx', params: { unit: "539223805", delDomain: "jfmedier-d.openx.net"}},
             {bidder: 'ix', params: { siteId: "210119", size: [300, 250] }},         
             {bidder: 'xaxis', params: { placementId: "5760264"}}]
