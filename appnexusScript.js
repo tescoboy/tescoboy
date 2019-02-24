@@ -1,3 +1,5 @@
+document.write("Hnew!");
+
 
 var div_1_sizes = [
                 [300, 250],
@@ -13,10 +15,8 @@ var div_1_sizes = [
                 [970, 250]
             ];
             var PREBID_TIMEOUT = 10000;
-
             var pbjs = pbjs || {};
             pbjs.que = pbjs.que || [];
-
             var adUnits = [
                 {
                     code: 'div-1',
@@ -27,12 +27,11 @@ var div_1_sizes = [
                     },
                     bids: [
             {bidder: 'rubicon', params: {accountId: "10478", siteId: "65884", zoneId: "309498"}},
-            {bidder: 'appnexus', params: {placementId: "11485448"}},
+            {bidder: 'appnexus', params: {placementId: "13144370"}},
             {bidder: 'openx', params: { unit: "539223805", delDomain: "jfmedier-d.openx.net"}},
-            {bidder: 'ix', params: { siteId: "210119", size: [300, 250] }},         
-            {bidder: 'xaxis', params: { placementId: "5760264"}}
-        ]
-    },
+            {bidder: 'ix', params: { siteId: "210119", size: [300, 250] }},
+            {bidder: 'xaxis', params: { placementId: "5760264"}}]
+                },
                 {
                     code: 'div-2',
                     mediaTypes: {
@@ -40,16 +39,13 @@ var div_1_sizes = [
                             sizes: div_2_sizes
                         }
                     },
-                    bids: bids: [
-            {bidder: 'rubicon', params: {accountId: "10478", siteId: "65884", zoneId: "309500"}},
-            {bidder: 'appnexus', params: {placementId: "11485449"}},
-            {bidder: 'openx', params: { unit: "539223806", delDomain: "jfmedier-d.openx.net"}},
-            {bidder: 'ix', params: { siteId: "212726", size: [300, 250] }},
-            {bidder: 'xaxis', params: { placementId: "5760265"}}
-        ]
-    }, {
-      
-
+                    bids: [{bidder: 'rubicon', params: {accountId: "10478", siteId: "65884", zoneId: "309510"}},
+            {bidder: 'appnexus', params: {placementId: "12886199"}},
+            {bidder: 'openx', params: { unit: "539223808", delDomain: "jfmedier-d.openx.net"}},
+            {bidder: 'ix', params: { siteId: "210117", size: [160, 600] }},
+            {bidder: 'xaxis', params: { placementId: "5760271"}}]
+                }
+            ];
             pbjs.que.push(function() {
                 pbjs.addAdUnits(adUnits);
                 pbjs.requestBids({
@@ -58,14 +54,16 @@ var div_1_sizes = [
                     },
                     timeout: PREBID_TIMEOUT
                 });
-
             });
              <!-- Prebid Config Section END -->
 var apntag = apntag || {};
             apntag.anq = apntag.anq || [];
             apntag.anq.push(function() {
                 apntag.setPageOpts({
-                    member: 1543
+                  keywords: {
+            'hg': 'yes',
+            'genre': ['rock', 'pop']
+        },
                 });
                 apntag.defineTag({
                     tagId: 12886199,
@@ -73,12 +71,11 @@ var apntag = apntag || {};
                     targetId: 'div-1'
                 });
                 apntag.defineTag({
-                    tagId: 10885450,
+                    tagId: 12886199,
                     sizes: div_2_sizes,
                     targetId: 'div-2'
                 });
             });
-
             //start loading tags
             function initAdserver() {
                 if (pbjs.requestSent) {
