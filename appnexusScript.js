@@ -1,4 +1,4 @@
-doucment.write("25th feb")
+
 var apn_Panoramabanner_A_sizes = [
     [930,180],
     [728, 90],
